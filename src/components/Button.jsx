@@ -1,10 +1,10 @@
 import React from "react";
 
-function Button({ onClick }) {
+function Button({ onClick, text, icon }) {
   return (
     <button onClick={onClick} className="btn">
-      <span className="btn-text">Account Settings</span>
-      <i className="material-icons">public</i>
+      <span className="btn-text">{text}</span>
+      <i className="material-icons">{icon}</i>
     </button>
   );
 }

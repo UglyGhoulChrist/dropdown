@@ -7,7 +7,11 @@ function Dropdown() {
 
   return (
     <div className="dropdown-wrapper open">
-      <Button onClick={() => setShowDropdownList((prev) => !prev)} />
+      <Button
+        text={"Account Settings"}
+        icon={"public"}
+        onClick={() => setShowDropdownList((prev) => !prev)}
+      />
       {showDropdownList && <DropdownList />}
     </div>
   );
